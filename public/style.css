@@ -8,6 +8,8 @@ body {
   background-repeat: no-repeat;
 }
 
+/* navbar styling */
+
 #navbar {
   position: fixed;
   height:8vh;
@@ -18,6 +20,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transform: translateY(-6.5vh);
+  transition: transform 0.5s;
+}
+
+#navbar:hover, #navbar.active {
+  transform: translateY(0);
 }
 
 #navbar .nav-buttons {
@@ -29,7 +37,7 @@ body {
 #navbar img {
   height: 125%;
   width: auto;
-  margin-left: 20px
+  margin-left: 10px
 }
 
 #navbar .button {
@@ -38,7 +46,7 @@ body {
   width: 100px;
   max-width: 15vw;
   margin: 0 20px 0 0;
-  border-radius: 10px;
+  border-radius: 7px;
   background-color: none;
   color: white;
   border-style: solid;
@@ -54,13 +62,60 @@ body {
   background-color: rgba(0,0,0,1);
 }
 
+/* body styling */
+
 #body {
   height:94vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
-
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
+
+  /* home page */
+
+#body #back-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-position: center;
+  height: 85vh;
+  width: 50%;
+  min-width: 350px;
+  background-image: url('images/back.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+
+  /* about page */
+
+#profile-pic {
+  border-radius: 50%;
+  margin: 25px;
+  width: 250px;
+  height: 250px;
+}
+
+#links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#links img{
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+#body p {
+  text-align: center;
+}
+
+/* footer styling */
 
 #footer {
   height:6vh;

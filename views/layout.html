@@ -12,15 +12,17 @@
   <div id="navbar">
     <img src="images/logo.png" />
     <div class="nav-buttons">
-      <div class="button">Home</div>
-      <div class="button">About Me</div>
+      <a href="/">
+        <div class="button">Home</div>
+      </a>
+      <a href="/about">
+        <div class="button">About</div>
+      </a>
       <div class="button">Blog</div>
-      <div class="button">Log In</div>
     </div>
   </div>
   <div id="body">
-    <h1>This is the main body</h1>
-    <p>and what a body it is</p>
+    {% block content %}{% endblock %}
   </div>
   <div id="footer">
       <div class="button">Contact</div>
