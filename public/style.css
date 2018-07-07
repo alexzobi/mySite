@@ -1,0 +1,86 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background-image: url('/images/front.jpg');
+  background-size: cover;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+}
+
+#navbar {
+  position: fixed;
+  height:8vh;
+  width: 98vw;
+  margin-left:1vw;
+  background-color: rgba(0,0,0, 0.75);
+  border-radius: 0 0 25px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar .nav-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#navbar img {
+  height: 125%;
+  width: auto;
+  margin-left: 20px
+}
+
+#navbar .button {
+  font-weight: bold;
+  height: 4vh;
+  width: 100px;
+  max-width: 15vw;
+  margin: 0 20px 0 0;
+  border-radius: 10px;
+  background-color: none;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#navbar .button:hover {
+  background-color: rgba(0,0,0,1);
+}
+
+#body {
+  height:94vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#footer {
+  height:6vh;
+  width: 100%;
+  background-color: #324a4a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.85;
+}
+
+#footer .button {
+  font-weight: bold;
+  height: 100%;
+  width: 100px;
+  margin:  0 10px 0 10px;
+  background-color: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

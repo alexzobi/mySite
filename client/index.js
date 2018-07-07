@@ -1,0 +1,1 @@
+const myFunc = ()=>{console.log("clicked")};
