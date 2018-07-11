@@ -82,12 +82,21 @@ body {
   align-items: center;
   background-position: center;
   height: 85vh;
-  width: 50%;
-  min-width: 350px;
+  max-height: 90vh;
+  width: calc(0.618631732 * 85vh);
+  /* min-width: 350px; */
   background-image: url('images/back.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   
+}
+
+#back-image p {
+  margin: 1vh;
+  width: 90%;
+  line-height: 2.2vh;
+  text-shadow: 0 0 10px black;
+  font-size: 2.1vh;
 }
 
   /* about page */
@@ -114,6 +123,49 @@ body {
 #body p {
   text-align: center;
 }
+
+  /* contact page */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#contact h1, h3 {
+  text-shadow: 0 0 10px black;
+}
+
+#contact input, textarea {
+  margin: 10px;
+  width: 300px;
+  line-height: 24px;
+  text-indent: 10px;
+  border-style: none;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#contact textarea {
+  width: 30vw;
+  height: 150px;
+  line-height: 18px;
+}
+
+#contact button {
+  width: 150px;
+  height: 30px;
+  margin: 10px 0 20px 0;
+  background-color: #324a4a;
+  border-style: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  box-shadow: 0 0 5px white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 
 /* footer styling */
 
