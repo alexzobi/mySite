@@ -8,3 +8,8 @@ module.exports = router;
 router.get('/', function (req, res, next) {
   res.render('contact')
 });
+
+router.post('/', function (req, res, next) {
+  console.log(req.body)
+  res.redirect('/')
+});

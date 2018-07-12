@@ -67,7 +67,13 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-const myFunc = ()=>{console.log("clicked")};
+module.exports = function (env){
+  const formValidate = () =>{
+    console.log(document.getElementById("name"))
+  }
+
+
+}
 
 /***/ })
 /******/ ]);
