@@ -5,6 +5,8 @@ const path = require("path");
 const app = express();
 const db = require("./models").db;
 
+if (process.env.NODE_ENV !== 'production') require('../secrets');
+
 app.set('view engine', 'html');
 app.engine('html', nunjucks.render);
 var env = nunjucks.configure('views', { noCache: true });

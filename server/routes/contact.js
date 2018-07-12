@@ -16,18 +16,20 @@ router.post('/', function (req, res, next) {
                   ${String(req.body.state)}, 
                   ${String(req.body.country)}`
   const message = `${String(req.body.message)}`
-
+  const mailer = process.env.SEND_EMAIL;
+  const recipient = process.env.RECEIVE_EMAIL;
+  const password = process.env.PASSWORD;
+  console.log("INFO FOR EMAIL!!!!!   ", mailer, recipient, password)
   const transporter = nodemailer.createTransport({
     service: 'yahoo',
     auth: {
-      user: process.env.SEND_EMAIL,
-      pass: process.env.PASSWORD
+      user: mailer,
+      pass: password
     }
   });
-
   const mailOptions = {
-    from: process.env.SEND_EMAIL,
-    to: process.env.RECEIVE_EMAIL,
+    from: mailer,
+    to: recipient,
     subject: 'But Why Website Visitor',
     text: 
       `From: ${name}\nEmail: ${email}\nLocation: ${location} \nMessage: ${message}`
