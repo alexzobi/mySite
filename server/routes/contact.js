@@ -9,7 +9,6 @@ router.get('/', function (req, res, next) {
 });
 
 router.post('/', function (req, res, next) {
-  console.log(req.body)
   const name = `${String(req.body.name)}` || ""
   const email = `${String(req.body.email)}` || "" 
   const location = `${String(req.body.city)}, 
@@ -19,7 +18,7 @@ router.post('/', function (req, res, next) {
   const mailer = process.env.SEND_EMAIL;
   const recipient = process.env.RECEIVE_EMAIL;
   const password = process.env.PASSWORD;
-  console.log("INFO FOR EMAIL!!!!!   ", mailer, recipient, password)
+
   const transporter = nodemailer.createTransport({
     service: 'yahoo',
     auth: {

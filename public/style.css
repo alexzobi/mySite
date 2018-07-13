@@ -135,6 +135,7 @@ body {
 
 #contact h1, #contact h3 {
   text-shadow: 0 0 10px black;
+  text-align: center;
 }
 
 #contact input, #contact textarea {
@@ -150,6 +151,7 @@ body {
 #contact textarea {
   width: 30vw;
   min-width: 300px;
+  padding: 10px;
   height: 150px;
   line-height: 18px;
 }
@@ -157,6 +159,7 @@ body {
 #contact button {
   width: 150px;
   height: 30px;
+  min-height: 5vh;
   margin: 10px 0 20px 0;
   background-color: #324a4a;
   border-style: none;
